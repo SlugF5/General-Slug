@@ -27,6 +27,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
+    <background>background\gittest</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
