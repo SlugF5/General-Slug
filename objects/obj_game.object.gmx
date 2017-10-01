@@ -89,6 +89,8 @@ for(xx = 0; xx &lt; mapwidth; xx += 1){
 instance_create(x, y, obj_cursor);
 instance_create(1,1,obj_view);
 
+//TEST STUFF
+inventory = false; //Is the inventory open?
 
 
 </string>
@@ -97,6 +99,31 @@ instance_create(1,1,obj_view);
       </action>
     </event>
     <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Debug
+
+//Quit with escape because its faster
+if(keyboard_check_pressed(vk_escape))
+    game_end();
+</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -132,7 +159,46 @@ case "initializing":
     break;
 }
 
-
+//Inventory test for databases
+if(keyboard_check_pressed(ord('A')))
+    inv_add(0,0);   //Add an item to the inventory database when we press A
+    
+if(keyboard_check_pressed(vk_enter))
+    inventory = !inventory; //Toggle inventory state on Enter
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(inventory)
+{
+    //Draw mockup inventory for demo purpose
+    draw_set_color(c_black);
+    draw_rectangle(32,32,room_width - 32,room_height-32,false);
+    
+    draw_set_color(c_white);
+    for(i=0; i&lt;global.__inv_max; i++)   //For each slot in the inventory
+    {
+        draw_text(48, 48+(16*i), idb_get(inv_get(0,i),0));  //Draw the name of the item in that slot
+    }
+}
 </string>
           </argument>
         </arguments>

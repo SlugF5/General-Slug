@@ -140,7 +140,7 @@ if(mouse_check_button_pressed(mb_left)){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>temptext = "noone";
 
 draw_self();
 
