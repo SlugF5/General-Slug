@@ -41,6 +41,8 @@ len = 0;
 image_speed = 0;
 //state = scr_move_state;
 scr_get_input();
+
+
 </string>
           </argument>
         </arguments>

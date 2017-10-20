@@ -49,7 +49,41 @@ selectedactor = noone;
     fricx = 0.5 * m; 
     status = 0;
 
+//Speech bubble
+//TODO: Add in more stuff
+msg[0] = "BIG YIFFY SQUART";
 
+alarm[1] = -1;
+showmsg = false;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(!showmsg)
+    alarm[1] = 30;
+else
+    alarm[1] = 60;
+    
+showmsg = !showmsg;
 </string>
           </argument>
         </arguments>
@@ -295,7 +329,14 @@ alarm[0] = room_speed;*/
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>if(showmsg)
+{
+    draw_set_color(c_white);
+    draw_rectangle(self.x, self.y - 32, self.x + 128, self.y - 16, false);
+    draw_set_color(c_black);
+    draw_text(self.x, self.y - 24, msg[0]);
+}
+</string>
           </argument>
         </arguments>
       </action>

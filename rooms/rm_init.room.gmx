@@ -19,6 +19,7 @@ sdb_init();
 //fdb_init();
 idb_init();
 inv_init();
+mdb_init();
 
 //Go to next room
 room_goto_next();</code>

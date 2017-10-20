@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_text</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_wall</sprite>
@@ -24,6 +26,14 @@
     <sprite>sprites\spr_slime</sprite>
     <sprite>sprites\spr_startposition</sprite>
     <sprite>sprites\spr_door</sprite>
+    <sprites name="Fonts">
+      <sprite>sprites\sFont</sprite>
+      <sprite>sprites\sMono</sprite>
+    </sprites>
+    <sprites name="Testing (ok to delete maybe)">
+      <sprite>sprites\spr_otherport</sprite>
+      <sprite>sprites\spr_dummyport</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
@@ -31,6 +41,7 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\parse_text.gml</script>
     <script>scripts\scr_get_input.gml</script>
     <script>scripts\scr_move_state.gml</script>
     <script>scripts\scr_uibasic.gml</script>
@@ -133,6 +144,11 @@
         <script>scripts\adb_add.gml</script>
         <script>scripts\adb_get.gml</script>
       </scripts>
+      <scripts name="Messages">
+        <script>scripts\mdb_init.gml</script>
+        <script>scripts\mdb_add.gml</script>
+        <script>scripts\mdb_get.gml</script>
+      </scripts>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -149,14 +165,18 @@
     <object>objects\obj_terrain</object>
     <object>objects\obj_startposition</object>
     <object>objects\obj_door</object>
+    <object>objects\obj_msgtester</object>
+    <object>objects\obj_msgbox</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
     <room>rooms\rm_one</room>
     <room>rooms\rm_two</room>
   </rooms>
-  <constants number="1">
+  <constants number="3">
     <constant name="grid_size">32</constant>
+    <constant name="c_shake">8008135</constant>
+    <constant name="fFont">font_add_sprite(sMono, ord(" "), true, 0)</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
