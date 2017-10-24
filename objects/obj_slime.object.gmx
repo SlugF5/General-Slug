@@ -39,6 +39,8 @@ type = 3;
 
 status = .2;
 
+image_speed = 1/6;
+
 </string>
           </argument>
         </arguments>

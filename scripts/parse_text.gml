@@ -1,4 +1,4 @@
-﻿//Parser for dialog engine
+//Parser for dialog engine
 //arg0 - string to be parsed
 //arg1 - formatting array to insert into
 
