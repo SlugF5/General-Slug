@@ -11,16 +11,16 @@
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_player_down</sprite>
-    <sprite>sprites\spr_player_down_2</sprite>
+    <sprite>sprites\spr_zushi_down</sprite>
     <sprite>sprites\spr_player_right</sprite>
-    <sprite>sprites\spr_player_right_2</sprite>
+    <sprite>sprites\spr_zushi_right</sprite>
     <sprite>sprites\spr_player_left</sprite>
-    <sprite>sprites\spr_player_left2</sprite>
+    <sprite>sprites\spr_zushi_left</sprite>
     <sprite>sprites\spr_player_up</sprite>
-    <sprite>sprites\spr_player_up_2</sprite>
+    <sprite>sprites\spr_zushi_up</sprite>
     <sprite>sprites\spr_player_shadow</sprite>
     <sprite>sprites\spr_nodetest</sprite>
-    <sprite>sprites\spr_cursor_</sprite>
+    <sprite>sprites\spr_cursor</sprite>
     <sprite>sprites\spr_selected</sprite>
     <sprite>sprites\spr_tree</sprite>
     <sprite>sprites\spr_slime</sprite>
