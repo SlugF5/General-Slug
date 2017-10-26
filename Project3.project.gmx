@@ -11,13 +11,13 @@
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_player_down</sprite>
-    <sprite>sprites\spr_player_down2</sprite>
+    <sprite>sprites\spr_zushi_down</sprite>
     <sprite>sprites\spr_player_right</sprite>
-    <sprite>sprites\spr_player_right2</sprite>
+    <sprite>sprites\spr_zushi_right</sprite>
     <sprite>sprites\spr_player_left</sprite>
-    <sprite>sprites\spr_player_left_2</sprite>
+    <sprite>sprites\spr_zushi_left</sprite>
     <sprite>sprites\spr_player_up</sprite>
-    <sprite>sprites\spr_player_up2</sprite>
+    <sprite>sprites\spr_zushi_up</sprite>
     <sprite>sprites\spr_player_shadow</sprite>
     <sprite>sprites\spr_nodetest</sprite>
     <sprite>sprites\spr_cursor</sprite>
@@ -176,7 +176,7 @@
   <constants number="3">
     <constant name="grid_size">32</constant>
     <constant name="c_shake">8008135</constant>
-    <constant name="fFont">font_add_sprite(sMono, ord(" "), true, 1)</constant>
+    <constant name="fFont">font_add_sprite(sMono, ord(" "), true, 0)</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

@@ -58,8 +58,6 @@ instance_create(selectedactor.x,selectedactor.y,obj_view);
 x = lerp(x, obj_cursor.x, 0.03);
 y = lerp(y, obj_cursor.y, 0.03);
 
-x = floor(x);
-y = floor(y);
 
 with obj_lifeform_parent {
  if (id == global.chosenactor)
