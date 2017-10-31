@@ -25,7 +25,32 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>phase = "initializing";
+            <string>
+// attempt to Turn off auto pixel sizing in GMS need som help- GT
+/*
+
+// disable automatic drawing of application surface
+    application_surface_draw_enable(false);
+// display full screen
+     window_set_fullscreen(true);
+ 
+// get moiter size and determine where to place game on screen
+     global.monitorw=display_get_width();
+     global.monitorh=display_get_height();
+     global.xoffset=(global.monitorw-480)/2;
+     global.yoffset=(global.monitorh-270)/2;
+    if(global.monitorw&gt;=1600 &amp;&amp; global.monitorh&gt;=900)
+    then
+    {
+    // using 3x current screen resolution 480x270
+        surface_resize(application_surface,1440,810)
+        global.xoffset=(global.monitorw-1440)/2;
+        global.yoffset=(global.monitorh-810)/2;
+    }
+    // draws application surface
+    draw_surface_ext(application_surface,global.xoffset,global.yoffset,1,1,0,c_white,1);
+*/
+phase = "initializing";
 
 
 tempterrain = 0;
