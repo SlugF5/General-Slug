@@ -66,12 +66,7 @@ status = 1;
             <kind>1</kind>
             <string>  depth = room_height-y;
   
-/*  if(collision_point(x,y,global.chosenactor,false,false)){
-    global.chosenterrain = id;
 
-    }else if(collision_point(x,y,global.chosenactor,false,false) == noone){
-    global.chosenterrain = noone;
-    }*/
  
     switch(type)
     {
@@ -94,8 +89,7 @@ status = 1;
                
                    
                         
-                    
-                   // alarm[0] = room_speed;
+                   
                 
                     break;
                 }

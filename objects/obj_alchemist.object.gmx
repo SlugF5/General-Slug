@@ -39,7 +39,7 @@ len = 0;
 
 
 image_speed = 0;
-//state = scr_move_state;
+
 scr_get_input();
 
 
@@ -148,21 +148,7 @@ if(global.chosenactor == id){
         }
     }
     
- /*   if(abs(vspd) &gt; 0)
-{
-    if(abs(vspd) - t_fricy &lt; 0)
-    {
-        vspd = 0;
-    }
-    else
-    {
-        if(vspd &gt; 0)
-            vspd -= t_fricy;
-        else
-            vspd += t_fricy;
-    }
-}  
-  */      
+
         
     }else{
     selectedactor = noone;

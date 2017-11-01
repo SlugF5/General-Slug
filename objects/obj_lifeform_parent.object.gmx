@@ -106,13 +106,7 @@ showmsg = !showmsg;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Alarm for slow20 state
-
-/*if(place_meeting(selectedactor.x,selectedactor.y, obj_slime)){
-status = scr_slow50;
-}else{
-status = scr_move_state;
-}*/
+            <string>/// Alarm 
 </string>
           </argument>
         </arguments>
@@ -154,11 +148,7 @@ if(keyboard_check(ord('Z'))){
             selectedactor = noone;    
     }
 }
-// status movement controls
-  
-    //script_execute(status);
-    
-   //slime collision
+
      
     
  
