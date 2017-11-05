@@ -34,6 +34,7 @@
       <sprite>sprites\spr_dummyport</sprite>
       <sprite>sprites\spr_zushi_por</sprite>
       <sprite>sprites\spr_zushi_por2</sprite>
+      <sprite>sprites\spr_alc_por</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
