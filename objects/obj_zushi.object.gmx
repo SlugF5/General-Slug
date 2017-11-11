@@ -81,14 +81,7 @@ if(global.chosenactor == id){
         var status_spd;
         status_spd = 0;
         
-     /*   if(collision_point(x,y,obj_terrain,false,true)!= noone){
-            with(obj_terrain){
-                }
-        }else{
-        
-        }
-        */
-        
+ 
  
     dir = point_direction(0,0, xaxis, yaxis);
     

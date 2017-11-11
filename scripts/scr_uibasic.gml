@@ -13,8 +13,7 @@ if(hovernode != noone){
     
     
     draw_set_color(c_black);
-    //draw_rectangle(mouse_x,mouse_y,string_width(temptext), string_height(temptext), false);
-    
+   
     draw_set_color(c_white);
     draw_text(mouse_x, mouse_y, temptext);
     

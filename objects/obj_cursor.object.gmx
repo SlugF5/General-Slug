@@ -62,7 +62,7 @@ y = mouse_y;
 
 
 
-//nearestplayer = instance_nearest(x,y,obj_lifeform_parent);
+
 
 chosenplayer = collision_point(x,y,obj_lifeform_parent,true,false);
 
@@ -76,22 +76,6 @@ if( gridx&lt; 0 || gridy &lt; 0 || gridx &gt;= room_width/grid_size || gridy &gt
     hovernode = map[gridx, gridy];
 }
 
-/*if(mouse_x == obj_lifeform_parent.x &amp;&amp; mouse_y == obj_lifeform_parent.y)
-{
-    hovernode = true;
-    occupant = true;
-with(chosenplayer){
-    selectedactor = 1; 
-    
-    }
-}
-
-else
-{
-    occupant = noone;
-}
-*/
- 
 
 if(mouse_check_button_pressed(mb_left)){
    

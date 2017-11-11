@@ -225,9 +225,8 @@ room_goto(other.next_room);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*status = scr_slow50;
+            <string>// collide
 
-alarm[0] = room_speed;*/
 </string>
           </argument>
         </arguments>
