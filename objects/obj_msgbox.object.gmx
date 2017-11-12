@@ -138,6 +138,7 @@ for(i = 1; i &lt; cur; i++)
 
     //Font kerning, since we can't use a built in sprite font seperation
     //Adjust for your own font to look good
+    //TODO: Are we using monospaced font or not?
     /*if (i &gt; 0)
     {
         if (string_ord_at(m, i - 1) &gt;= 65 &amp;&amp; string_ord_at(m, i - 1) &lt;= 90)
